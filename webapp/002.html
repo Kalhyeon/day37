@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>성적</title>
+</head>
+<body>
+	<h1>성적을 입력받아 90점 이상이면 우수, 70점 이상이면 합격, 아니면 불합격이라고 출력</h1>
+	<form action="/day37/exam2" method="post">
+		<!--
+			get : 서버의 상태 (정보)가 바뀌지 않는다 => 재실행 가능
+				  => 서버로 넘기는 정보를 주소 창에 출력
+				  => QueryString => 즐겨찾기 가능
+			post : 서버의 상태 (정보)가 바뀐다 => 재실행 불가
+				   => 즐겨찾기 불가능
+				   
+			URLEncoded, QueryString, location.search
+			, URLSearchParams
+		-->
+		성적 : <input type="number" name="score">
+		<button>보내기</button>
+	</form>
+</body>
+</html>
